@@ -1,8 +1,11 @@
 
 
 def print_odd_even(num):
-    if num % 2:
-        print("ODD")
+    if isinstance(num, int):
+        if num % 2:
+            print("ODD")
+        else:
+            print("EVEN")
     else:
-        print("EVEN")
+        print("Given number is not an int.")
 
